@@ -19,6 +19,7 @@ import com.example.sapsmostwantedapp.ui.theme.SAPSMostWantedAppTheme
 class MainActivity : ComponentActivity() {
 
     private lateinit var navigateToRegLink: TextView
+    private lateinit var loginButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,9 +28,14 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         navigateToRegLink  = findViewById(R.id.createAccountLink)
+        loginButton = findViewById(R.id.loginBtn)
 
         navigateToRegLink.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
+            startActivity(intent)
+            }
+        loginButton.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">SAPS Most Wanted App</string>
+    <string name="app_name">SAPS Most Wanted</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_in_continue">Sign in to continue</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Do not have an account? Click here</string>
+    <string name="create_account">Create an account</string>
+    <string name="fill_all_fields">Fill in all fields to create account</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_hint">Email</string>
+    <string name="already_have_account">Already have an account? Click here to login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="settings_title">Settings</string>
+    <string name="language">Language</string>
+    <string name="logout">Log out</string>
 </resources>
