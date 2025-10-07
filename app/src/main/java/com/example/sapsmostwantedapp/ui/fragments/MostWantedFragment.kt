@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
+import com.example.sapsmostwantedapp.LocaleHelper
 import com.example.sapsmostwantedapp.ui.adapters.WantedAdapter
 import com.example.sapsmostwantedapp.ui.viewmodel.WantedViewModel
 
@@ -26,6 +27,9 @@ class MostWantedFragment : Fragment(R.layout.fragment_most_wanted) {
     private lateinit var adapter: WantedAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        LocaleHelper.loadLocale(requireActivity())
+
         recycler = view.findViewById(R.id.recyclerViewWanted)
         progressBar = view.findViewById(R.id.progressBar)
         swipe = view.findViewById(R.id.swipeRefresh)
@@ -55,6 +59,7 @@ class MostWantedFragment : Fragment(R.layout.fragment_most_wanted) {
         }
 
         // initial load
+
         vm.loadWanted()
     }
 }

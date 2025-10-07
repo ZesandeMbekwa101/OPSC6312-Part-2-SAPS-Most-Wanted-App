@@ -16,8 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="South Africa — Most Wanted"
+            android:textColor="@color/black"
+            android:text="@string/most_wanted"
             android:textSize="20sp"
+            android:layout_marginTop="8dp"
             android:textStyle="bold" />
 
         <ProgressBar

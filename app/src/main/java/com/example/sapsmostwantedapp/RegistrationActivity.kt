@@ -13,6 +13,9 @@ class RegistrationActivity : ComponentActivity() {
     private lateinit var navigateToLogLink : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        LocaleHelper.loadLocale(this)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 

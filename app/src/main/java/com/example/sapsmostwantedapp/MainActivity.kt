@@ -17,11 +17,13 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.sapsmostwantedapp.ui.theme.SAPSMostWantedAppTheme
 
 class MainActivity : ComponentActivity() {
-
     private lateinit var navigateToRegLink: TextView
     private lateinit var loginButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        LocaleHelper.loadLocale(this)
+
         super.onCreate(savedInstanceState)
         Thread.sleep(5000)
         installSplashScreen()
