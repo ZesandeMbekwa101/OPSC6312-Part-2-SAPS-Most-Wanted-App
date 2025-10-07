@@ -21,42 +21,40 @@ User Session Storage
 User-Friendly Interface
   Simple and intuitive navigation, ensuring ease of use for all users.
 
----
+ Technologies Used
 
-## Technologies Used
+  Programming Language: Kotlin
+  IDE: Android Studio
+  Database: Firebase Realtime Database (for login & registration)
+  API: Free SAPS Most Wanted Public API
+  Storage: SharedPreferences
 
-* **Programming Language:** Kotlin
-* **IDE:** Android Studio
-* **Database:** Firebase Realtime Database (for login & registration)
-* **API:** Free SAPS Most Wanted Public API
-* **Storage:** SharedPreferences
 
----
 
-## Installation Instructions
+Installation Instructions
 
-1. **Clone the Repository**
+1. Clone the Repository
 
    ```bash
    git clone https://github.com/yourusername/SAPSMostWantedApp.git
    ```
 
-2. **Open in Android Studio**
+2. Open in Android Studio
 
-   * Open the cloned project in Android Studio.
-   * Wait for Gradle to finish syncing.
+    Open the cloned project in Android Studio.
+    Wait for Gradle to finish syncing.
 
-3. **Set Up Firebase**
+3. Set Up Firebase
 
-   * Create a Firebase project in the Firebase Console.
-   * Add your Android app’s package name.
-   * Download and place the `google-services.json` file in the `app/` directory.
-   * Enable the Realtime Database and Authentication (if needed).
+    Create a Firebase project in the Firebase Console.
+    Add your Android app’s package name.
+    Download and place the `google-services.json` file in the `app/` directory.
+    Enable the Realtime Database and Authentication (if needed).
 
-4. **Configure the API**
+4. Configure the API
 
-   * In the code, locate the section that calls the SAPS Most Wanted API.
-   * Replace the API endpoint with your chosen **live API URL** (if not already included).
+   In the code, locate the section that calls the SAPS Most Wanted API.
+   Replace the API endpoint with your chosen live API URL (if not already included).
 
 5. **Build and Run**
 
