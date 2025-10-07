@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250452115969",
+    "project_id": "opsc-saps-mw-app",
+    "storage_bucket": "opsc-saps-mw-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250452115969:android:34e93473c1ef25bb423600",
+        "android_client_info": {
+          "package_name": "com.example.sapsmostwantedapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBC8e-bUfBgcmRwwxYvjm5_BZuMxfzDkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

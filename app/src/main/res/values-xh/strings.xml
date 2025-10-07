@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Uluhlu Lwabaphikisi BeSAPS</string>
+    <string name="welcome">Wamkelekile</string>
+    <string name="sign_in_continue">Ngena ukuze uqhubeke</string>
+    <string name="username_hint">Igama lomsebenzisi</string>
+    <string name="password_hint">Iphasiwedi</string>
+    <string name="login">Ngena</string>
+    <string name="dont_have_account">Awunayo i-akhawunti? Cofa apha</string>
+    <string name="create_account">Yenza i-akhawunti</string>
+    <string name="fill_all_fields">Gcwalisa yonke imihlathi ukuze wenze i-akhawunti</string>
+    <string name="first_name_hint">Igama</string>
+    <string name="last_name_hint">Isibongo</string>
+    <string name="email_hint">I-imeyile</string>
+    <string name="already_have_account">Unayo i-akhawunti? Cofa apha ukuze ungene</string>
+    <string name="sign_up">Bhalisa</string>
+    <string name="settings_title">Useto</string>
+    <string name="language">Ulwimi</string>
+    <string name="logout">Phuma</string>
+</resources>
