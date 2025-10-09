@@ -75,6 +75,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+
 
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")

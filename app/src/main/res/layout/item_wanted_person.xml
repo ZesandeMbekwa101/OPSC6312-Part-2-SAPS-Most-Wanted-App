@@ -12,32 +12,42 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="8dp">
 
+        <!-- Fugitive Name -->
         <TextView
             android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:text="Name"/>
+            android:text="Name" />
 
-        <TextView
-            android:id="@+id/txtCrime"
+        <!-- Gender Label + Value -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:layout_marginTop="6dp"
-            android:text="Crime details"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
 
-        <TextView
-            android:id="@+id/txtLink"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textSize="13sp"
-            android:autoLink="web"
-            android:textColor="?attr/colorPrimary"
-            android:text="Source URL"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Unknown" />
+        </LinearLayout>
+
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFugitive"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvWanted"
+            android:text="Wanted"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp">
+
+            <TextView android:id="@+id/tvCrime" style="@style/detailRow"/>
+            <TextView android:id="@+id/tvCaseNumber" style="@style/detailRow"/>
+            <TextView android:id="@+id/tvGender" style="@style/detailRow"/>
+            <TextView android:id="@+id/tvHairColor" style="@style/detailRow"/>
+            <TextView android:id="@+id/tvStation" style="@style/detailRow"/>
+            <TextView android:id="@+id/tvPhone" style="@style/detailRow"/>
+            <TextView android:id="@+id/tvEmail" style="@style/detailRow"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

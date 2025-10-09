@@ -1,12 +1,14 @@
 package com.example.sapsmostwantedapp.data.model
 
+import java.io.Serializable
+
 data class WantedPerson(
     val id: String?,
     val caption: String?,
     val schema: String?,
     val properties: Properties?,
     val target: Boolean? = false
-)
+) : Serializable
 
 data class Properties(
     val alias: List<String>?,
@@ -19,4 +21,5 @@ data class Properties(
     val country: List<String>?,
     val sourceUrl: List<String>?,
     val topics: List<String>?,
-    val hairColor: String?  )
+    val hairColor: String?
+) : Serializable

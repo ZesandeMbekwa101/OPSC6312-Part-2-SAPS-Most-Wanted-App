@@ -28,16 +28,15 @@ class WantedAdapter(
     override fun onBindViewHolder(holder: VH, position: Int) {
         val p = items[position]
         holder.name.text = p.properties?.name?.firstOrNull() ?: p.caption ?: "Unknown"
-        holder.crime.text = p.properties?.notes?.joinToString("\n") ?: "No details"
-
-        val url = p.properties?.sourceUrl?.firstOrNull() ?: ""
-        holder.link.text = url
+        holder.gender.text = p.properties?.gender?.joinToString("\n") ?: "No details"
 
         holder.itemView.setOnClickListener {
-            if (url.isNotBlank()) {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                it.context.startActivity(intent)
-            }
+            val fragment = com.example.sapsmostwantedapp.ui.fragments.FugitiveDetailFragment.newInstance(p)
+            val activity = it.context as androidx.appcompat.app.AppCompatActivity
+            activity.supportFragmentManager.beginTransaction()
+                .replace(R.id.frame_Layout, fragment)
+                .addToBackStack(null)
+                .commit()
         }
     }
 
@@ -45,7 +44,6 @@ class WantedAdapter(
 
     class VH(view: View) : RecyclerView.ViewHolder(view) {
         val name: TextView = view.findViewById(R.id.txtName)
-        val crime: TextView = view.findViewById(R.id.txtCrime)
-        val link: TextView = view.findViewById(R.id.txtLink)
+        val gender: TextView = view.findViewById(R.id.txtGender)
     }
 }
