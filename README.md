@@ -54,71 +54,54 @@ Installation Instructions
 4. Configure the API
 
    In the code, locate the section that calls the SAPS Most Wanted API.
-   Replace the API endpoint with your chosen live API URL (if not already included).
-
-5. **Build and Run**
+   
+5. Build and Run
 
    * Connect your Android device or start an emulator.
-   * Click **Run** ▶️ to install and launch the app.
+   * Click Run ▶️ to install and launch the app.
 
----
 
-## How to Use the App
 
-### 1. Registration
+ How to Use the App
 
-* Open the app and tap **Register**.
-* Enter your username, password, and any other required details.
-* Your details will be securely stored in Firebase.
+ 1. Registration
 
-### 2. Login
+ Open the app and tap Register.
+ Enter your username, password, and any other required details.
+ Your details will be securely stored in Firebase.
 
-* On the login screen, enter your registered username and password.
-* Tap **Login** to access the main dashboard.
-* If your credentials are correct, you’ll be redirected to the **Home Screen**.
+ 2. Login
 
-### 3. View Most Wanted List
+ On the login screen, enter your registered username and password.
+ Tap Login to access the main dashboard.
+ If your credentials are correct, you’ll be redirected to the Home Screen.
 
-* After logging in, the app will fetch data from the SAPS API.
-* The list of wanted individuals will display:
+ 3. View Most Wanted List
 
-  * Full name
-  * Crime type or case details
-  * Photo (if available)
+ After logging in, the app will fetch data from the SAPS API.
+ The list of wanted individuals will display:
 
-### 4. Search for Suspects
+   Full name
+   Crime type or case details
+   Photo 
 
-* Use the search bar to find specific individuals by name or type of crime.
+ 4. Search for Suspects
 
-### 5. Logout
+ Use the search bar to find specific individuals by name or type of crime.
 
-* To log out, use the logout button found in the menu or top-right corner.
+ 5. Logout
 
----
+To log out, use the logout button found in the menu or top-right corner.
 
-## Notes
 
-* Ensure that your device is connected to the internet to fetch live data from the API.
-* Firebase access requires proper configuration; incorrect credentials or database paths will prevent login.
-* This app is **for educational purposes** and not an official SAPS application.
+ Notes
 
----
+ Ensure that your device is connected to the internet to fetch live data from the API.
+ Firebase access requires proper configuration; incorrect credentials or database paths will prevent login.
+ This app is for educational purposes and not an official SAPS application.
 
-## Future Enhancements
 
-* Add support for push notifications when new wanted persons are added.
-* Integrate Google Maps to show the last known locations.
-* Include an anonymous tip-off form for reporting sightings.
 
----
+Developer: Zesande Mbekwa and Olothando Hoyi
+Language: Kotlin
 
-## License
-
-This project is open-source and available under the **MIT License**.
-
----
-
-**Developer:** [Your Name]
-**Language:** Kotlin
-**Version:** 1.0
-**Last Updated:** October 2025
