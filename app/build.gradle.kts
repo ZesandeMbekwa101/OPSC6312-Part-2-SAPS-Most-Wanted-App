@@ -1,7 +1,11 @@
+import org.jetbrains.kotlin.fir.expressions.FirEmptyArgumentList.arguments
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -37,11 +41,37 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    kapt {
+        arguments {
+            arg("kapt.incremental.apt", "false")
+        }
+        javacOptions {
+            option("-Xmaxerrs", 500)
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.jvm=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED")
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.jvm=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED")
+            option("--add-opens", "jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED")
+        }
+    }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {
@@ -92,6 +122,16 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("com.google.android.material:material:1.5.0")
     implementation("com.google.firebase:firebase-auth:22.3.1")
+
+    // Room database
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+
+    // Dependency injection
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-compiler:2.48")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")

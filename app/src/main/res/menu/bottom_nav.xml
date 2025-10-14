@@ -6,15 +6,15 @@
         android:id="@+id/home"
         android:icon="@drawable/baseline_home_24"/>
 
-    <item android:title="fugitive"
+    <item android:title="fugitives"
         android:id="@+id/fugitive"
         android:icon="@drawable/outline_accessibility_new_24"/>
 
-    <item android:title="Notification"
+    <item android:title="Notifications"
         android:id="@+id/notification"
         android:icon="@drawable/baseline_circle_notifications_24"/>
 
-    <item android:title="Setting"
+    <item android:title="Settings"
         android:id="@+id/setting"
         android:icon="@drawable/baseline_settings_24"/>
 </menu>
