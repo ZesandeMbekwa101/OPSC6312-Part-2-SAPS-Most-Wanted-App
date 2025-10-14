@@ -102,6 +102,8 @@ To log out, use the logout button found in the menu or top-right corner.
 
 
 
-Developer: Zesande Mbekwa and Olothando Hoyi
+Developer: Zesande Mbekwa, Olothando Hoyi and Athenkosi Sonakile
 Language: Kotlin
 
+YOUTUBE VIDEO LINK
+https://youtu.be/_2oEYm7vnE0?si=9ql18OnoFx0JgSZM
