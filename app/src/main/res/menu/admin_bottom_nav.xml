@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_users"
+        android:title="Users"
+        android:icon="@android:drawable/ic_menu_manage"/>
+    <item
+        android:id="@+id/nav_reports"
+        android:title="Reports"
+        android:icon="@android:drawable/ic_menu_view"/>
+    <item
+        android:id="@+id/nav_user_reports"
+        android:title="User Reports"
+        android:icon="@android:drawable/ic_menu_info_details"/>
+    <item
+        android:id="@+id/nav_wanted_notifications"
+        android:title="Wanted Notifications"
+        android:icon="@android:drawable/ic_menu_view"/>
+    <item
+        android:id="@+id/nav_activity_logs"
+        android:title="Activity Logs"
+        android:icon="@android:drawable/ic_menu_recent_history"/>
+</menu>
+
+
+
+
+
