@@ -26,7 +26,7 @@ Architecture	MVVM (Model-View-ViewModel)
 •	User Session Storage: Uses Android SharedPreferences to remember logged-in users.
 •	User-Friendly Interface: Provides a simple navigation layout following Material Design principles.
 6. Installation Instructions
-1.	Step 1: Clone the repository using: git clone https://github.com/ZesandeMbekwa101/SAPSMostWantedApp.git
+1.	Step 1: Clone the repository using: git clone https://https://github.com/ZesandeMbekwa101/OPSC6312-Part-2-SAPS-Most-Wanted-App/tree/MyWork
 2.	Step 2: Open the project in Android Studio and wait for Gradle to finish syncing.
 3.	Step 3: Configure Firebase by adding your Android app’s package name and downloading the google-services.json file.
 4.	Step 4: Configure the API by verifying the API URL in the code.
