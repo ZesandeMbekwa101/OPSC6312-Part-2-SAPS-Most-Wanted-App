@@ -1,107 +1,56 @@
- SAPS Most Wanted App
-
-App Overview
-
-The SAPS Most Wanted App is an Android application built using Kotlin that allows users to view and search for the South African Police Service’s most wanted individuals. The app integrates with a free live API to fetch real-time data about wanted suspects and provides a simple authentication system for users to register and log in securely.
-
-Our App Features
-
-User Registration and Login
-  Users can create an account or log in using their credentials. Authentication details are stored securely using Firebase Realtime Database.
-
-Live SAPS Most Wanted Data
-  The app retrieves and displays information about the most wanted people directly from a public SAPS API.
-
-Search Functionality
-  Users can search for suspects by name or crime type.
-
-User Session Storage
-  The app remembers the logged-in user using Android’s SharedPreferences for convenience.
-
-User-Friendly Interface
-  Simple and intuitive navigation, ensuring ease of use for all users.
-
- Technologies Used
-
-  Programming Language: Kotlin
-  IDE: Android Studio
-  Database: Firebase Realtime Database (for login & registration)
-  API: Free SAPS Most Wanted Public API
-  Storage: SharedPreferences
-
-
-
-Installation Instructions
-
-1. Clone the Repository
-
-   ```bash
-   git clone https://github.com/yourusername/SAPSMostWantedApp.git
-   ```
-
-2. Open in Android Studio
-
-    Open the cloned project in Android Studio.
-    Wait for Gradle to finish syncing.
-
-3. Set Up Firebase
-
-    Create a Firebase project in the Firebase Console.
-    Add your Android app’s package name.
-    Download and place the `google-services.json` file in the `app/` directory.
-    Enable the Realtime Database and Authentication (if needed).
-
-4. Configure the API
-
-   In the code, locate the section that calls the SAPS Most Wanted API.
-   
-5. Build and Run
-
-   * Connect your Android device or start an emulator.
-   * Click Run ▶️ to install and launch the app.
+ SAPS Most Wanted App Report
+1. Introduction
+The SAPS Most Wanted App is an Android mobile application developed using Kotlin in Android Studio. The application allows users to view and search for individuals listed as the most wanted by the South African Police Service (SAPS). It connects to a live public SAPS API to fetch real-time data about wanted suspects and integrates Firebase Realtime Database for secure user registration and authentication. This app was created as an educational project to demonstrate modern Android development practices, API integration, and secure authentication using Firebase.
+2. Purpose of the Application
+The main purpose of the SAPS Most Wanted App is to improve public safety awareness and make information on wanted suspects easily accessible to the general public. By providing an interactive and real-time platform, the app allows users to search for, view, and stay informed about individuals wanted by SAPS.
+In addition to public awareness, the project aims to demonstrate the use of real-time data integration with APIs, implement secure authentication mechanisms using Firebase, and showcase modern Android development principles such as MVVM architecture and SharedPreferences for session management.
+3. Design Considerations
+•	Simplicity and Accessibility – The user interface was designed to be simple, intuitive, and accessible for all users.
+•	Performance Optimization – Efficient data fetching ensures smooth performance on all devices.
+•	Security – Firebase Authentication and secure database connections protect user data.
+•	Scalability – The app follows the MVVM architecture, allowing for easy updates and maintenance.
+•	Offline Awareness – The app alerts users when there is no internet connection.
+•	Modern UI/UX Design – Built using Material Design components for a professional user experience.
+4. Technologies Used
+Component	Technology/Tool
+Programming Language	Kotlin
+Integrated Development Environment (IDE)	Android Studio
+Database	Firebase Realtime Database
+API	SAPS Most Wanted Public API
+Storage	SharedPreferences
+Architecture	MVVM (Model-View-ViewModel)
+5. Application Features
+•	User Registration and Login: Secure registration and login using Firebase Realtime Database.
+•	Live SAPS Most Wanted Data: Retrieves live data directly from the SAPS API and displays suspect details.
+•	Search Functionality: Users can search for suspects by name or crime category.
+•	User Session Storage: Uses Android SharedPreferences to remember logged-in users.
+•	User-Friendly Interface: Provides a simple navigation layout following Material Design principles.
+6. Installation Instructions
+1.	Step 1: Clone the repository using: git clone https://github.com/ZesandeMbekwa101/SAPSMostWantedApp.git
+2.	Step 2: Open the project in Android Studio and wait for Gradle to finish syncing.
+3.	Step 3: Configure Firebase by adding your Android app’s package name and downloading the google-services.json file.
+4.	Step 4: Configure the API by verifying the API URL in the code.
+5.	Step 5: Build and run the app on a connected device or emulator.
+7. How to Use the Application
+•	Registration – Tap Register, enter credentials, and save them securely in Firebase.
+•	Login – Enter registered credentials to access the dashboard.
+•	View Most Wanted List – The app fetches live data from the SAPS API and displays details.
+•	Search for Suspects – Use the search bar to filter suspects by name or crime type.
+•	Logout – Tap Logout from the menu to securely end your session.
+8. Release Notes
+Version 1.0.0 — Initial Release (November 2025)
+•	Firebase Authentication System – Provides real-time, secure user registration and login.
+•	Live SAPS API Integration – Enables real-time updates and ensures current suspect data.
+•	Smart Search System – Allows quick search by name or crime type.
+•	Session Management – Remembers logged-in users using SharedPreferences.
+•	Modern Material Design – Enhances user experience and accessibility.
+9. Notes and Limitations
+•	The SAPS Most Wanted App is for educational purposes only and is not an official SAPS application.
+•	An active internet connection is required to retrieve data from the API.
+•	Incorrect Firebase configuration may prevent successful authentication.
+10. Conclusion
+The SAPS Most Wanted App demonstrates the integration of real-time APIs, secure authentication systems, and modern Android development tools. By focusing on accessibility, performance, and security, the application provides a strong example of how mobile technology can support public safety awareness and innovation in community engagement.
 
 
 
- How to Use the App
-
- 1. Registration
-
- Open the app and tap Register.
- Enter your username, password, and any other required details.
- Your details will be securely stored in Firebase.
-
- 2. Login
-
- On the login screen, enter your registered username and password.
- Tap Login to access the main dashboard.
- If your credentials are correct, you’ll be redirected to the Home Screen.
-
- 3. View Most Wanted List
-
- After logging in, the app will fetch data from the SAPS API.
- The list of wanted individuals will display:
-
-   Full name
-   Crime type or case details
-   Photo 
-
- 4. Search for Suspects
-
- Use the search bar to find specific individuals by name or type of crime.
-
- 5. Logout
-
-To log out, use the logout button found in the menu or top-right corner.
-
-
- Notes
-
- Ensure that your device is connected to the internet to fetch live data from the API.
- Firebase access requires proper configuration; incorrect credentials or database paths will prevent login.
- This app is for educational purposes and not an official SAPS application.
-
-
-
-Developer: Zesande Mbekwa and Olothando Hoyi
-Language: Kotlin
-
+Youtube Link: 
