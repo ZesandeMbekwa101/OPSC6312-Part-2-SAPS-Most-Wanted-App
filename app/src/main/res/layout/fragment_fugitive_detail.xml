@@ -53,37 +53,7 @@
             <TextView android:id="@+id/tvEmail" style="@style/detailRow"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center">
 
-            <Button
-                android:id="@+id/buttonFound"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Person Found"
-                android:textSize="14sp"
-                android:textColor="@android:color/white"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:layout_marginEnd="8dp"
-                android:padding="12dp"/>
-
-            <Button
-                android:id="@+id/buttonNotFound"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Not Found"
-                android:textSize="14sp"
-                android:textColor="@android:color/white"
-                android:backgroundTint="@android:color/holo_red_dark"
-                android:layout_marginStart="8dp"
-                android:padding="12dp"/>
-        </LinearLayout>
 
         <Button
             android:id="@+id/buttonEmergency"

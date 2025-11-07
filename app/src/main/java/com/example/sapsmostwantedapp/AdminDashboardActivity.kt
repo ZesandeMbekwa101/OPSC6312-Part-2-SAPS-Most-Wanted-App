@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.sapsmostwantedapp.ui.fragments.ActivityLogsFragment
+import com.example.sapsmostwantedapp.ui.fragments.AdminDashboardFragment
 import com.example.sapsmostwantedapp.ui.fragments.ReportsViewFragment
 import com.example.sapsmostwantedapp.ui.fragments.UserManagementFragment
 import com.example.sapsmostwantedapp.ui.fragments.UserReportsFragment
@@ -35,10 +36,14 @@ class AdminDashboardActivity : AppCompatActivity() {
         bottomNav = findViewById(R.id.adminBottomNav)
 
         // Load default fragment
-        loadFragment(UserManagementFragment())
+        loadFragment(AdminDashboardFragment())
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.nav_admin_dashboard -> {
+                    loadFragment(UserManagementFragment())
+                    true
+                }
                 R.id.nav_users -> {
                     loadFragment(UserManagementFragment())
                     true
@@ -55,15 +60,8 @@ class AdminDashboardActivity : AppCompatActivity() {
                     loadFragment(WantedPersonNotificationsFragment())
                     true
                 }
-                R.id.nav_activity_logs -> {
-                    try {
-                        loadFragment(ActivityLogsFragment())
-                    } catch (e: Exception) {
-                        android.util.Log.e("AdminDashboardActivity", "Error loading ActivityLogsFragment: ${e.message}", e)
-                        Toast.makeText(this, "Activity logs feature is temporarily unavailable", Toast.LENGTH_SHORT).show()
-                    }
-                    true
-                }
+
+
                 else -> false
             }
         }

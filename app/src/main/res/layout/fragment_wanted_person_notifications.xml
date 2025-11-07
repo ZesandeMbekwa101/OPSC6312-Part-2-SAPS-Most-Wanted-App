@@ -10,7 +10,7 @@
         android:id="@+id/titleNotifications"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wanted Person Notifications"
+        android:text="Report Management"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/gold_btn"

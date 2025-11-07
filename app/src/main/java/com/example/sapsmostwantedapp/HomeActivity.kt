@@ -4,6 +4,7 @@ import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sapsmostwantedapp.ui.fragments.MostWantedFragment
+import com.example.sapsmostwantedapp.ui.fragments.NotificationsFragment
 import com.example.sapsmostwantedapp.ui.fragments.ReportSubmissionFragment
 import com.example.sapsmostwantedapp.ui.fragments.SettingsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -46,6 +47,12 @@ class HomeActivity : AppCompatActivity() {
                     }
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame_Layout, fragment)
+                        .commit()
+                    true
+                }
+                R.id.id_notification -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame_Layout, NotificationsFragment())
                         .commit()
                     true
                 }

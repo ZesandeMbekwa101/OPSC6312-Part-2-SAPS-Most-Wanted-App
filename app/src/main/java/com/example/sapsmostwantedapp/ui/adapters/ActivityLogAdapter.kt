@@ -63,3 +63,5 @@ class ActivityLogAdapter : ListAdapter<ActivityLog, ActivityLogAdapter.ActivityL
 }
 
 
+
+

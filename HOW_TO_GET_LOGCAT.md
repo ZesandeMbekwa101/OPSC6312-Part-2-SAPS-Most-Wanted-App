@@ -53,3 +53,5 @@ adb logcat -c
 This clears the log, then try to login and see what appears.
 
 
+
+

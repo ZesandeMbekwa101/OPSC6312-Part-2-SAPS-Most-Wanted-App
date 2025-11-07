@@ -10,8 +10,12 @@
         android:id="@+id/fugitive"
         android:icon="@drawable/outline_accessibility_new_24"/>
 
-    <item android:title="Notification"
+    <item android:title="Tip"
         android:id="@+id/notification"
+        android:icon="@drawable/tip_icon"/>
+
+    <item android:title="Notification"
+        android:id="@+id/id_notification"
         android:icon="@drawable/baseline_circle_notifications_24"/>
 
     <item android:title="Setting"

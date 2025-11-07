@@ -13,6 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
+
 rootProject.name = "SAPS Most Wanted App"
 include(":app")
  

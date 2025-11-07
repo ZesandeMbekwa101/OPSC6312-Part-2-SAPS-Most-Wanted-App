@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mostWantedFragment">
+
+    <!-- MostWantedFragment -->
+    <fragment
+        android:id="@+id/mostWantedFragment"
+        android:name="com.example.sapsmostwantedapp.ui.fragments.MostWantedFragment"
+        android:label="Most Wanted"
+        tools:layout="@layout/fragment_most_wanted">
+        <action
+            android:id="@+id/actionMostWantedFragmentToFugitiveDetailFragment"
+            app:destination="@id/fugitiveDetailFragment" />
+    </fragment>
+
+    <!-- FugitiveDetailFragment -->
+    <fragment
+        android:id="@+id/fugitiveDetailFragment"
+        android:name="com.example.sapsmostwantedapp.ui.fragments.FugitiveDetailFragment"
+        android:label="Fugitive Details"
+        tools:layout="@layout/fragment_fugitive_detail">
+        <argument
+            android:name="person"
+            app:argType="com.example.sapsmostwantedapp.data.model.WantedPerson" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+</navigation>

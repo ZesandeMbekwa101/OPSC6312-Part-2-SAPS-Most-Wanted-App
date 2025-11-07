@@ -17,4 +17,5 @@
     <string name="language">Language</string>
     <string name="logout">Log out</string>
     <string name="most_wanted">Most Wanted</string>
+    <string name="notifications">Notifications</string>
 </resources>

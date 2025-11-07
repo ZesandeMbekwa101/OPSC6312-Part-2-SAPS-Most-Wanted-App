@@ -12,5 +12,6 @@
     <color name="blue">#03055B</color>
     <color name="gold_btn">#EAB95D</color>
     <color name="nav_blue">#1B4381</color>
+    <color name="light_gray">#DDDDDD</color>
 
 </resources>
